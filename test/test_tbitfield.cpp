@@ -29,12 +29,12 @@ TEST(TBitField, new_bitfield_is_set_to_zero)
 
 TEST(TBitField, can_set_bit)
 {
-  TBitField bf(100);
+  TBitField bf(2000);
 
   EXPECT_EQ(0, bf.GetBit(3));
 
-  bf.SetBit(3);
-  EXPECT_NE(0, bf.GetBit(3));
+  bf.SetBit(300);
+  EXPECT_NE(0, bf.GetBit(300));
 }
 
 TEST(TBitField, can_clear_bit)
