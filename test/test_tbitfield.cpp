@@ -16,7 +16,7 @@ TEST(TBitField, can_get_length)
 
 TEST(TBitField, new_bitfield_is_set_to_zero)
 {
-  TBitField bf(100);
+  TBitField bf(10);
 
   int sum = 0;
   for (int i = 0; i < bf.GetLength(); i++)
@@ -29,7 +29,7 @@ TEST(TBitField, new_bitfield_is_set_to_zero)
 
 TEST(TBitField, can_set_bit)
 {
-  TBitField bf(10);
+  TBitField bf(100);
 
   EXPECT_EQ(0, bf.GetBit(3));
 
