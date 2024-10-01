@@ -1,7 +1,4 @@
-#include "pch.h"
-
-//#include "../gtest/gtest.h"
-
+#include "../gtest/gtest.h"
 #include "tbitfield.h"
 
 
