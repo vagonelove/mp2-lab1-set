@@ -216,7 +216,7 @@ TEST(TBitField, can_invert_bitfield)
   negBf = ~bf;
 
   for (int i = 0; i < size; i++)
-	  expNegBf.SetBit(1);
+	  expNegBf.SetBit(i);
   expNegBf.ClrBit(100);
 
   EXPECT_EQ(expNegBf, negBf);
@@ -230,7 +230,7 @@ TEST(TBitField, can_invert_large_bitfield)
   negBf = ~bf;
 
   for(int i = 0; i < size; i++)
-    expNegBf.SetBit(i);
+	expNegBf.SetBit(i);
   expNegBf.ClrBit(35);
 
   EXPECT_EQ(expNegBf, negBf);
